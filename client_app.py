@@ -7,7 +7,7 @@ socketio = SocketIO(app)
 
 @app.route('/')
 def index():
-    return render_template('cindex.html')
+    return render_template('client/cindex.html')
 
 if __name__ == '__main__':
     socketio.run(app, debug=True)
